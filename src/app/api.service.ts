@@ -13,4 +13,7 @@ export class ApiService {
   UsdataData = ()=>{
     return this.http.get('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
   }
+  todoData = ()=>{
+    return this.http.get('https://dummyjson.com/todos')
+  }
 }
