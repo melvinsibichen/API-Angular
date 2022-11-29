@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerviewComponent } from './passengerview/passengerview.component';
 import { UsdataComponent } from './usdata/usdata.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoutes:Routes=[
   {
@@ -22,7 +23,8 @@ const myRoutes:Routes=[
   declarations: [
     AppComponent,
     PassengerviewComponent,
-    UsdataComponent
+    UsdataComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
