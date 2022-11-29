@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { PassengerviewComponent } from './passengerview/passengerview.component';
 import { UsdataComponent } from './usdata/usdata.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TodoComponent } from './todo/todo.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const myRoutes:Routes=[
   {
@@ -17,6 +19,10 @@ const myRoutes:Routes=[
     path:"us",
     component:UsdataComponent
   }
+  {
+    path:"todo",
+    component:TodoComponent
+  }
 ]
 
 @NgModule({
@@ -24,12 +30,14 @@ const myRoutes:Routes=[
     AppComponent,
     PassengerviewComponent,
     UsdataComponent,
-    NavbarComponent
+    NavbarComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
