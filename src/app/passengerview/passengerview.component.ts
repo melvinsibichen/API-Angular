@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 export class PassengerAppComponent {
   constructor(private api:ApiService){
     api.passengerData().subscribe(
-      (response)=>{
+      (response: any)=>{
         this.passengers = response
       }
     )
