@@ -19,4 +19,7 @@ export class ApiService {
   quotesData = ()=>{
     return this.http.get('https://dummyjson.com/quotes')
   }
+  productData = ()=>{
+    return this.http.get('https://dummyjson.com/products')
+  }
 }
