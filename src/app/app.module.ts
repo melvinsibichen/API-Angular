@@ -9,6 +9,7 @@ import { UsdataComponent } from './usdata/usdata.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TodoComponent } from './todo/todo.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { QuotesComponent } from './quotes/quotes.component';
 
 const myRoutes:Routes=[
   {
@@ -18,11 +19,16 @@ const myRoutes:Routes=[
   {
     path:"us",
     component:UsdataComponent
-  }
+  },
   {
     path:"todo",
     component:TodoComponent
-  }
+  },
+  {
+    path:"quotes",
+    component:QuotesComponent
+  },
+  
 ]
 
 @NgModule({
@@ -31,7 +37,8 @@ const myRoutes:Routes=[
     PassengerviewComponent,
     UsdataComponent,
     NavbarComponent,
-    TodoComponent
+    TodoComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
