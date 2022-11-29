@@ -16,4 +16,7 @@ export class ApiService {
   todoData = ()=>{
     return this.http.get('https://dummyjson.com/todos')
   }
+  quotesData = ()=>{
+    return this.http.get('https://dummyjson.com/quotes')
+  }
 }
