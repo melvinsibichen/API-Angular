@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TodoComponent } from './todo/todo.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { QuotesComponent } from './quotes/quotes.component';
+import { ShopingComponent } from './shooping/shooping.component';
 
 const myRoutes:Routes=[
   {
@@ -28,6 +29,10 @@ const myRoutes:Routes=[
     path:"quotes",
     component:QuotesComponent
   },
+  {
+    path:"shopping",
+    component:ShopingComponent
+  }
   
 ]
 
@@ -38,7 +43,8 @@ const myRoutes:Routes=[
     UsdataComponent,
     NavbarComponent,
     TodoComponent,
-    QuotesComponent
+    QuotesComponent,
+    ShopingComponent
   ],
   imports: [
     BrowserModule,
